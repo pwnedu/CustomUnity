@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a2021f486fd534b8fc771c390d8f16, type: 3}
+  m_Name: Default Project Styles
+  m_EditorClassIdentifier: 
+  fileLabelType: 2
+  widthToShowExtensions: 250
+  rightOffset: 0
+  textSize: 10
+  textAlign: 1
+  textStyle: 0
+  textColor: {r: 0.7877358, g: 0.8675409, b: 1, a: 1}
+  randomTextColor: 0
+  styles:
+  - folderOrFileName: Scenes
+    iconType: 2
+    widthToShowIcons: 175
+    iconOffset: 5
+    iconSize: 0
+    iconAlign: 0
+    iconColor: {r: 1, g: 0.8561901, b: 0, a: 1}
+    randomIconColor: 0
+    rightOffset: 0
+    backgroundHeight: 1
+    backgroundColor: {r: 1, g: 0, b: 0.6784314, a: 1}
+    randomBackgroundColor: 0
+    textSize: 0
+    textColor:
+      serializedVersion: 2
+      rgba: 4293250033
+    textAlignment: 0
+    textStyle: 1

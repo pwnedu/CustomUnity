@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82bb36dfa268bee4692540ed80f5d5f5, type: 3}
+  m_Name: Default Hierarchy Styles
+  m_EditorClassIdentifier: 
+  displayLabelType: 13
+  spriteLayerName: Layer
+  spriteOrderName: 
+  sortingLayerName: 
+  sortingOrderName: 
+  excludeDefault: 1
+  widthToShowLabels: 250
+  rightOffset: -15
+  textSize: 10
+  textAlign: 1
+  textStyle: 1
+  textColor: {r: 0.9716981, g: 0.89276034, b: 0.82961017, a: 1}
+  randomTextColor: 0
+  styles:
+  - headerTag: ---
+    iconType: 3
+    widthToShowIcons: 200
+    iconOffset: 5
+    iconSize: 14
+    iconAlign: 1
+    iconColor: {r: 0.8867924, g: 0, b: 0.094827056, a: 1}
+    randomIconColor: 0
+    leftOffset: 18
+    rightOffset: 0
+    backgroundHeight: 0.95
+    backgroundColor: {r: 0, g: 0.56078434, b: 1, a: 1}
+    randomBackgroundColor: 0
+    textSize: 0
+    textColor:
+      serializedVersion: 2
+      rgba: 4294036429
+    textAlignment: 3
+    textStyle: 1
+    useCaseScenario: 0
