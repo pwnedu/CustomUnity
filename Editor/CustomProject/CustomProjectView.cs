@@ -15,7 +15,7 @@ namespace CustomProjectView
 
         static CustomProjectView()
         {
-            //FindStyleData();
+            FindStyleData();
             EditorApplication.projectWindowItemOnGUI += HandleProjectWindowItemOnGUI;
         }
 
@@ -95,7 +95,6 @@ namespace CustomProjectView
             GUIExtension.DrawLabelStyle(metric, selection, styleData.LabelStyle);
         }
 
-        [InitializeOnLoadMethod]
         private static void FindStyleData()
         {
             var guids = AssetDatabase.FindAssets($"t:{typeof(CustomProjectStyles)}");
