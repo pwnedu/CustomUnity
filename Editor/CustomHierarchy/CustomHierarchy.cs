@@ -32,8 +32,8 @@ namespace CustomHierarchy
 
         static CustomHierarchy()
         {
-            //FindStyleData();
-            //InitialiseCustomLabels();
+            FindStyleData();
+            InitialiseCustomLabels();
             EditorApplication.hierarchyWindowItemOnGUI += HandleHierarchyWindowItemOnGUI;
         }
 
@@ -256,7 +256,6 @@ namespace CustomHierarchy
             GUIExtension.DrawLabelStyle(label, selection, styleData.LabelStyle);
         }
 
-        [InitializeOnLoadMethod]
         private static void FindStyleData()
         {
             var guids = AssetDatabase.FindAssets($"t:{typeof(CustomHierarchyStyles)}");
@@ -267,7 +266,6 @@ namespace CustomHierarchy
             }
         }
 
-        [InitializeOnLoadMethod]
         private static void InitialiseCustomLabels()
         {
             if (!string.IsNullOrEmpty(styleData.spriteLayerName)) { spriteLayer = styleData.spriteLayerName; }
