@@ -5,7 +5,7 @@ using UnityEngine;
 namespace CustomHierarchy
 {
     [InitializeOnLoad]
-    public class CustomHierarchy : MonoBehaviour
+    public class CustomHierarchy
     {
         public static CustomHierarchyStyles styleData;
 
@@ -268,6 +268,7 @@ namespace CustomHierarchy
 
         private static void InitialiseCustomLabels()
         {
+            if (styleData == null) { return; }
             if (!string.IsNullOrEmpty(styleData.spriteLayerName)) { spriteLayer = styleData.spriteLayerName; }
             if (!string.IsNullOrEmpty(styleData.spriteOrderName)) { spriteOrder = styleData.spriteOrderName; }
             if (!string.IsNullOrEmpty(styleData.sortingLayerName)) { sortingLayer = styleData.sortingLayerName; }

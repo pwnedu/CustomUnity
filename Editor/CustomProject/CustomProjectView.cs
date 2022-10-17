@@ -6,7 +6,7 @@ using System.IO;
 namespace CustomProjectView
 {
     [InitializeOnLoad]
-    public class CustomProjectView : MonoBehaviour
+    public class CustomProjectView
     {
         private static CustomProjectStyles styleData;
 
