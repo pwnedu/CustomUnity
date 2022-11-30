@@ -95,6 +95,13 @@ namespace CustomProjectView
             GUIExtension.DrawLabelStyle(metric, selection, styleData.LabelStyle);
         }
 
+        [MenuItem(CustomProjectViewMenu.menuItem + "Project View Settings", priority = 31)]
+        private static void ProjectViewSettings()
+        {
+            EditorGUIUtility.PingObject(styleData);
+            Selection.activeObject = styleData;
+        }
+
         private static void FindStyleData()
         {
             var guids = AssetDatabase.FindAssets($"t:{typeof(CustomProjectStyles)}");

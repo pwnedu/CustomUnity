@@ -1,4 +1,5 @@
-﻿using CustomExtensions;
+﻿using Codice.Client.Common;
+using CustomExtensions;
 using UnityEditor;
 using UnityEngine;
 
@@ -254,6 +255,13 @@ namespace CustomHierarchy
         private static void AddLabel(string label, Rect selection)
         {
             GUIExtension.DrawLabelStyle(label, selection, styleData.LabelStyle);
+        }
+
+        [MenuItem(CustomHierarchyMenu.menuItem + "Hierarchy Settings", priority = 21)]
+        private static void HierarchySettings()
+        {
+            EditorGUIUtility.PingObject(styleData);
+            Selection.activeObject = styleData;
         }
 
         private static void FindStyleData()
