@@ -7,7 +7,7 @@ namespace CustomProjectView
     public class CustomProjectViewMenu
     {
         const string menuItem = "Tools/Custom Tools/Custom Project View/";
-        const string toolPath = "Packages/com.kiltec.unitytools/Editor/CustomProject/";
+        const string toolPath = "Packages/com.kiltec.projectcustomiser/Editor/CustomProject/";
 
         [MenuItem(menuItem + "Project View Settings", priority = 31)]
         private static void ProjectViewSettings()
