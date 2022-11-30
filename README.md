@@ -14,7 +14,7 @@
 
 ### Package Hub Installation ###
 
-1. Installed from inside Unity with the PackageHub
+1. Installed from inside Unity with the [Package Hub by pwnedu main code repository](https://github.com/pwnedu/PackageHub)
 
 ---
 
