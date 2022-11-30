@@ -5,11 +5,9 @@
 ---
 
 ```txt
- ◆ Custom Attributes
  ◆ Custom Console
  ◆ Custom Hierarchy
  ◆ Custom Project View
- ◆ My Notes
 ```
 
 ---
