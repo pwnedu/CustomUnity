@@ -6,7 +6,7 @@ namespace CustomProjectView
 {
     public class CustomProjectViewMenu
     {
-        public const string menuItem = "Tools/Custom Tools/Custom Project View/";
+        const string menuItem = "Tools/Custom Tools/Custom Project View/";
         const string toolPath = "Packages/com.kiltec.projectcustomiser/Editor/CustomProject/";
 
         //[MenuItem(menuItem + "Project View Settings", priority = 31)]
@@ -20,6 +20,13 @@ namespace CustomProjectView
         //    EditorGUIUtility.PingObject(asset);
         //    Selection.activeObject = asset;
         //}
+
+        [MenuItem(menuItem + "Project View Settings", priority = 31)]
+        private static void ProjectViewSettings()
+        {
+            EditorGUIUtility.PingObject(CustomProjectView.StyleData);
+            Selection.activeObject = CustomProjectView.StyleData;
+        }
 
         [MenuItem(menuItem + "Project View Help", priority = 32)]
         private static void ProjectViewHelp()

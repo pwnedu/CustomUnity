@@ -117,7 +117,7 @@ namespace CustomHierarchy
             GUILayout.Space(verticalGap);
 
             // Input Fields
-            switch (CustomHierarchy.styleData.displayLabelType)
+            switch (CustomHierarchy.StyleData.displayLabelType)
             {
                 case ObjectInfoDisplay.None:
                     break;
@@ -146,15 +146,15 @@ namespace CustomHierarchy
                 case ObjectInfoDisplay.Static:
                     break;
                 case ObjectInfoDisplay.SpriteAll:
-                    SetField("Sorting Layer", ref renameOne, ref CustomHierarchy.styleData.spriteLayerName, ref CustomHierarchy.spriteLayer);
+                    SetField("Sorting Layer", ref renameOne, ref CustomHierarchy.StyleData.spriteLayerName, ref CustomHierarchy.spriteLayer);
                     GUILayout.Space(verticalGap);
-                    SetField("Sorting Order", ref renameTwo, ref CustomHierarchy.styleData.spriteOrderName, ref CustomHierarchy.spriteOrder);
+                    SetField("Sorting Order", ref renameTwo, ref CustomHierarchy.StyleData.spriteOrderName, ref CustomHierarchy.spriteOrder);
                     break;
                 case ObjectInfoDisplay.SpriteLayer:
-                    SetField("Sorting Layer", ref renameThree, ref CustomHierarchy.styleData.sortingLayerName, ref CustomHierarchy.sortingLayer);
+                    SetField("Sorting Layer", ref renameThree, ref CustomHierarchy.StyleData.sortingLayerName, ref CustomHierarchy.sortingLayer);
                     break;
                 case ObjectInfoDisplay.SpriteOrder:
-                    SetField("Sorting Order", ref renameFour, ref CustomHierarchy.styleData.sortingOrderName, ref CustomHierarchy.sortingOrder);
+                    SetField("Sorting Order", ref renameFour, ref CustomHierarchy.StyleData.sortingOrderName, ref CustomHierarchy.sortingOrder);
                     break;
             }
         }

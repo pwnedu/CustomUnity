@@ -9,9 +9,10 @@ namespace CustomProjectView
     public class CustomProjectView
     {
         private static CustomProjectStyles styleData;
+        public static CustomProjectStyles StyleData => styleData;
 
         private static float displayHeight;
-        public static float DisplayHeight { get { return displayHeight; } }
+        public static float DisplayHeight => displayHeight;
 
         static CustomProjectView()
         {
@@ -93,13 +94,6 @@ namespace CustomProjectView
             else { metric = $"{(float)size / 1048576:0.00} MB"; }
 
             GUIExtension.DrawLabelStyle(metric, selection, styleData.LabelStyle);
-        }
-
-        [MenuItem(CustomProjectViewMenu.menuItem + "Project View Settings", priority = 31)]
-        private static void ProjectViewSettings()
-        {
-            EditorGUIUtility.PingObject(styleData);
-            Selection.activeObject = styleData;
         }
 
         private static void FindStyleData()

@@ -1,5 +1,4 @@
-﻿using Codice.Client.Common;
-using CustomExtensions;
+﻿using CustomExtensions;
 using UnityEditor;
 using UnityEngine;
 
@@ -8,7 +7,8 @@ namespace CustomHierarchy
     [InitializeOnLoad]
     public class CustomHierarchy
     {
-        public static CustomHierarchyStyles styleData;
+        private static CustomHierarchyStyles styleData;
+        public static CustomHierarchyStyles StyleData => styleData;
 
         private static readonly int IgnoreLayer = LayerMask.NameToLayer("Default");
         private static readonly string IgnoreTag = "Untagged";
@@ -29,7 +29,7 @@ namespace CustomHierarchy
         public static string sortingOrder = "Sorting Order";
 
         private static float displayHeight;
-        public static float DisplayHeight { get { return displayHeight; } }
+        public static float DisplayHeight => displayHeight;
 
         static CustomHierarchy()
         {
@@ -255,13 +255,6 @@ namespace CustomHierarchy
         private static void AddLabel(string label, Rect selection)
         {
             GUIExtension.DrawLabelStyle(label, selection, styleData.LabelStyle);
-        }
-
-        [MenuItem(CustomHierarchyMenu.menuItem + "Hierarchy Settings", priority = 21)]
-        private static void HierarchySettings()
-        {
-            EditorGUIUtility.PingObject(styleData);
-            Selection.activeObject = styleData;
         }
 
         private static void FindStyleData()

@@ -71,9 +71,9 @@ namespace CustomHierarchy
         {
             var previousColour = GUI.contentColor;
             int size = 18;
-            bool button = CustomHierarchy.styleData.displayLabelType == ObjectInfoDisplay.SpriteAll
-                || CustomHierarchy.styleData.displayLabelType == ObjectInfoDisplay.SpriteLayer
-                || CustomHierarchy.styleData.displayLabelType == ObjectInfoDisplay.SpriteOrder;
+            bool button = CustomHierarchy.StyleData.displayLabelType == ObjectInfoDisplay.SpriteAll
+                || CustomHierarchy.StyleData.displayLabelType == ObjectInfoDisplay.SpriteLayer
+                || CustomHierarchy.StyleData.displayLabelType == ObjectInfoDisplay.SpriteOrder;
 
             // Scriptable Title
             GUILayout.Label("Custom Hierarchy Styling", headerStyle);

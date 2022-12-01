@@ -6,7 +6,7 @@ namespace CustomHierarchy
 {
     public class CustomHierarchyMenu
     {
-        public const string menuItem = "Tools/Custom Tools/Custom Hierarchy/";
+        const string menuItem = "Tools/Custom Tools/Custom Hierarchy/";
         const string toolPath = "Packages/com.kiltec.projectcustomiser/Editor/CustomHierarchy/";
 
         //[MenuItem(menuItem + "Hierarchy Settings", priority = 21)]
@@ -20,6 +20,13 @@ namespace CustomHierarchy
         //    EditorGUIUtility.PingObject(asset);
         //    Selection.activeObject = asset;
         //}
+
+        [MenuItem(menuItem + "Hierarchy Settings", priority = 21)]
+        private static void HierarchySettings()
+        {
+            EditorGUIUtility.PingObject(CustomHierarchy.StyleData);
+            Selection.activeObject = CustomHierarchy.StyleData;
+        }
 
         [MenuItem(menuItem + "Hierarchy Help", priority = 22)]
         private static void HierarchyHelp()
