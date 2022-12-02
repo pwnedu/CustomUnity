@@ -1,11 +1,11 @@
 {
-  "name": "com.kiltec.projectcustomiser",
+  "name": "com.kiltec.customunity",
   "version": "0.0.12",
   "displayName": "Custom Unity by pwnedu",
   "description": "A collection of simple tools to customise the Unity console, hierarchy and project view.",
   "unity": "2018.1",
-  "documentationUrl": "https://github.com/pwnedu/ProjectCustomisation/wiki",
-  "licensesUrl": "https://github.com/pwnedu/ProjectCustomisation/blob/main/LICENSE",
+  "documentationUrl": "https://github.com/pwnedu/CustomUnity/wiki",
+  "licensesUrl": "https://github.com/pwnedu/CustomUnity/blob/main/LICENSE",
   "keywords": [
     "unity",
     "tools",
