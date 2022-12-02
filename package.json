@@ -4,6 +4,7 @@
   "displayName": "Custom Unity by pwnedu",
   "description": "A collection of simple tools to customise the Unity console, hierarchy and project view.",
   "unity": "2018.1",
+  "changelogUrl": "https://github.com/pwnedu/CustomUnity/blob/main/CHANGELOG.md",
   "documentationUrl": "https://github.com/pwnedu/CustomUnity/wiki",
   "licensesUrl": "https://github.com/pwnedu/CustomUnity/blob/main/LICENSE.md",
   "keywords": [
