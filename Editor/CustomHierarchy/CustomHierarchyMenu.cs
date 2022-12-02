@@ -7,7 +7,7 @@ namespace CustomHierarchy
     public class CustomHierarchyMenu
     {
         const string menuItem = "Tools/Custom Tools/Custom Hierarchy/";
-        const string toolPath = "Packages/com.kiltec.projectcustomiser/Editor/CustomHierarchy/";
+        const string toolPath = "Packages/com.kiltec.customunity/Editor/CustomHierarchy/";
 
         //[MenuItem(menuItem + "Hierarchy Settings", priority = 21)]
         //private static void HierarchySettings()
