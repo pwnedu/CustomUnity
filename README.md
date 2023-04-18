@@ -1,3 +1,7 @@
+---
+Description: This package for Unity allows you to fully customise your hierarchy, project and console windows, allowing for easier identification of key elements to improve your productivity and workflow.
+---
+
 # CustomUnity #
 
 ### A Collection of Simple Tools for Unity Customisation ###
